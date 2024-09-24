@@ -1,0 +1,116 @@
+body{
+    background-color: whitesmoke;
+    background-image: url(RikasModel2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rikas-header{
+    /*background-color: black;*/
+    display: flex;
+    color: white;
+}
+
+.rikas-header-logo{
+    width: 10%;
+    margin: 0 5%;
+    color: black;
+    /*background-color: green;*/
+}
+
+.rikas-header-navbar{
+    width: 40%;
+    margin: 0 10%;
+    /*background-color: blueviolet;*/
+    /*padding: 0 10%;*/
+}
+
+.rikas-header-button{
+    width: 10%;
+    margin: 0 5%;
+    /*background-color: aquamarine;*/
+}
+
+.rikas-header-navbar-ul{
+    /*background-color: red;*/
+    display: flex;
+    list-style-type: none;
+}
+
+.rikas-header-navbar-ul span{
+    width: 20%;
+    margin: 2.5%;
+}
+
+.rikas-chat{
+    background-color: blue;
+    
+}
+
+.rikas-chat-interface{
+    background-color: wheat;
+    display: none;
+    height: 55%;
+    width: 25%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#rikas-chat-box-div{
+    overflow: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scroll-snap-stop: always;
+}
+
+.rikas-chat-image{
+    border-radius: 50px;
+}
+
+.rikas-chat-speaker-interface{
+    padding: 15px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.rikas-chat-visitor-interface{
+    padding: 15px;
+    background-color: palevioletred;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 15px;
+    float: right;
+}
+
+.rikas-chat-interface-render{
+    display: flex;
+}
+
+.rikas-chat-interface-visitor-toolbar{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.5px solid black;
+    padding: 10px;
+    opacity: 30%;
+}
+
+.rikas-chat-interface-visitor-toolbar input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+    background-color: inherit;
+}
+
+#rikas-chat-button{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+   /* position: relative;
+    float: right;*/
+}
