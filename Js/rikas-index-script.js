@@ -1,9 +1,12 @@
 function openchat(){
     console.log("clicked")
     document.getElementById("rikas-chat-intrfc").style.display='flex'
+    document.getElementById("rikas-metatools-div").style.display='block'
+    
 }
-function closechat(){
-
+function closeChat(){
+    document.getElementById("rikas-chat-intrfc").style.display='none'
+    document.getElementById("rikas-metatools-div").style.display='none'
 }
 
 function callSendMessage(event){
@@ -21,6 +24,13 @@ function sendMessage(){
     var divChatEle = document.createElement("div")
     divChatEle.classList.add("rikas-chat-visitor-interface")
     divChatEle.innerText=text
-    document.getElementById("rikas-chat-box-div").appendChild(divChatEle);
+    document.getElementById("rikas-chat-box-div").appendChild(divChatEle).scrollIntoView(true);
     }
+}
+
+function submitform(event){
+    console.log("hi")
+    console.log(event)
+    console.log(event.data)
+    return false;
 }
