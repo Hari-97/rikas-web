@@ -1,2 +1,2 @@
 # rikas-web
-Rikas bridal makeover's official website
+Rikas bridal makeover's official website.
