@@ -1,5 +1,5 @@
 body{
-    background-color: whitesmoke;
+    background-color: black;
     background-image: url(RikasModel2.jfif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,10 @@ body{
 .rikas-header-logo{
     width: 10%;
     margin: 0 5%;
-    color: black;
+    color: palevioletred;
+    font-weight: 1100;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /*background-color: green;*/
 }
 
@@ -27,7 +30,14 @@ body{
 .rikas-header-button{
     width: 10%;
     margin: 0 5%;
-    /*background-color: aquamarine;*/
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    border-style: ridge;
+    
 }
 
 .rikas-header-navbar-ul{
@@ -71,6 +81,25 @@ body{
  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
+@keyframes dotAnimation {
+    from{display: none}
+    to{display: flex}
+}
+
+#dotspanspeaker1{
+    animation-name: dotAnimation;
+    animation-duration: 0.4s;
+}
+
+#dotspanspeaker2{
+    animation-name: dotAnimation;
+    animation-duration: 0.8s;
+}
+
+#dotspanspeaker3{
+    animation-name: dotAnimation;
+    animation-duration: 1.2s;
+}
 
 .rikas-chat-interface{
     background-color: wheat;
@@ -94,29 +123,67 @@ body{
     scrollbar-width: thin;
     scroll-snap-stop: always;
     padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .rikas-chat-image{
     border-radius: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .rikas-chat-speaker-interface{
+    margin: 0 10px ;
     padding: 15px;
     background-color: antiquewhite;
     border-radius: 20px;
 }
 
+.rikas-greet-message{
+    line-height: 25px;  
+}
+
+.dot-anime-render{
+    display: none;
+}
+
+
 .rikas-chat-visitor-interface{
     padding: 15px;
     background-color: palevioletred;
     border-radius: 20px;
-    width: 80%;
-    margin-top: 15px;
+    margin: 15px 10px;
     float: right;
+    align-self: flex-end;
+}
+
+.rikas-answers-options-span{
+    padding: 12px;
+    background-color: rgb(251, 102, 102);
+    border-radius: 20px;
+    margin: 10px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.rikas-answers-options-span :hover{
+    background-color: white;
+}
+
+#rikas-option-yes{
+    background-color: rgb(21, 185, 21);
+}
+
+.rikas-answers-options{
+    border-radius: 20px;
+    display: flex;
 }
 
 .rikas-chat-interface-render{
     display: flex;
+    margin: 5px;
 }
 
 .rikas-chat-interface-visitor-toolbar{
@@ -142,6 +209,10 @@ body{
     background-color: inherit;
 }
 
+.rikas-chat-interface-visitor-toolbar:focus-within{
+    opacity: 100%;
+}
+
 .rikas-chat-interface-visitor-toolbar button{
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -154,7 +225,7 @@ body{
 
 #rikas-chat-button{
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 90%;
     border: none;
     border-radius: 50px;
@@ -175,7 +246,12 @@ body{
     display: flex;
     flex-direction: column;
     width: 30%;
-    padding: 2% 35%;
+    padding: 0.5% 35%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
 }
 
 .rikas-footer a{

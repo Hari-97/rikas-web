@@ -1,0 +1,125 @@
+body{
+    
+}
+.rikas-header{
+    /*background-color: black;*/
+    padding-top: 20px;
+    display: flex;
+    color: black;
+    
+}
+
+.rikas-header-logo{
+    width: 10%;
+    margin: 0 5%;
+    color: palevioletred;
+    font-weight: 1100;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: green;*/
+}
+
+.rikas-header-navbar{
+    width: 40%;
+    margin: 0 10%;
+    /*background-color: blueviolet;*/
+    /*padding: 0 10%;*/
+}
+
+.rikas-header-button{
+    width: 10%;
+    margin: 0 5%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    border-style: ridge;
+    
+}
+
+.rikas-header-navbar-ul{
+    /*background-color: red;*/
+    display: flex;
+    list-style-type: none;
+}
+
+.rikas-header-navbar-ul span{
+    width: 20%;
+    margin: 2.5%;
+    
+}
+
+.rikas-header-navbar-ul span a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.rikas-portfolio-cards{
+    margin: 30px;
+    margin-bottom: 100px;
+    background-color: black;
+    display: grid;
+    gap: 15px;
+    padding: 10px;
+}
+
+.portfolio-card-items{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 100px;
+    font-size: 30px;
+}
+
+#portfolio-card-item1{
+    grid-row: 1;
+    grid-column: 1;
+}
+#portfolio-card-item2{
+    grid-row: 1;
+    grid-column: 2;
+}
+#portfolio-card-item3{
+    grid-row: 1 / span 2;
+    grid-column: 3 ;
+}
+#portfolio-card-item4{
+    grid-row: 2 / span 2;
+    grid-column: 1 ;
+}
+#portfolio-card-item5{
+    grid-row: 2;
+    grid-column: 2 ;
+}
+#portfolio-card-item6{
+    grid-row: 3;
+    grid-column: 2 ;
+}
+#portfolio-card-item7{
+    grid-row: 3;
+    grid-column: 3 ;
+}
+
+.rikas-footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0.5% 35%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.rikas-footer a{
+    color: inherit;
+}
+
+.rikas-footer span{
+    padding: 2%;
+    word-spacing: 2px;
+}
